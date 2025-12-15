@@ -3,7 +3,7 @@ name: FULL CI CD PIPELINE
 
 on:
   push:
-    types: main
+    branches: main
 
 jobs:
   build:
