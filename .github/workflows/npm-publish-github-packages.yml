@@ -15,6 +15,10 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm test
+      - name: Install Dependenices
+      - run: npm ci 
+      - name: Start App & Run Cypress
+      - run: npm run test:e2e:ci
 
   publish-gpr:
     needs: build
